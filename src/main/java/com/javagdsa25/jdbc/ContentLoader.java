@@ -1,5 +1,6 @@
 package com.javagdsa25.jdbc;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ContentLoader {
@@ -46,5 +47,16 @@ public class ContentLoader {
         } else {
             return false;
         }
+    }
+
+    public void printList(List<Student> studentList) {
+        for (Student s : studentList) {
+            System.out.println(s);
+        }
+    }
+
+    public void clickToContiunue() {
+        System.out.println("Click 'ENTER' to continue...");
+        scanner.nextLine();
     }
 }
